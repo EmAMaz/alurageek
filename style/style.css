@@ -1,0 +1,212 @@
+body{
+    font-family: 'Heebo', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 25vw);
+    margin: 30px auto;
+    align-items: center;
+}
+button, a{
+    cursor: pointer;
+}
+.logo-buscador{
+    display: flex;
+}
+.container-logo, .titulo-logo{
+    display: flex;
+}
+.logoAlura,.logoGeek{
+    font-size: 2em;
+}
+.logoAlura{
+    color: #2a7ae4;
+}
+.btn-navbar{
+    border: 1.8px solid #2a7ae4;
+    background: transparent;
+    color: #2a7ae4;
+    font-size: 17px;
+    padding: 12px 50px;
+}
+.container-buscador input{
+    padding: 10px 250px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgb(236, 236, 236);
+}
+.container-buscador{
+    position: relative;
+    margin-left: 40px;
+}
+.buscador-input{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.container-inicio{
+    height: 38vh;
+}
+.container-info-inicio{
+    background-image: url(../style/img/img-inicio.jfif);
+    background-size: 100% 250%;
+    background-position-y: center;
+    height: 100%;
+}
+.info-inicio{    
+    padding: 152px 152px 0px 152px;
+}    
+.container-inicio h1{
+    color: #fff;
+    font-size: 2.5em;
+}
+.container-inicio p{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.btn-verConsola{
+    padding: 13px 20px;
+    font-size: 18px;
+    background: #2a7ae4;
+    color: #fff;
+    border: none;
+}
+.container-card{
+    padding: 50px 152px;
+}
+.container-titulo-mas{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.ver-mas-card{
+    color: #424242;
+}
+.title-card{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.container-li-tarjeta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.container-li-tarjeta li{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 24px;
+}
+.img-tarjeta{
+    width: 200px;
+    height: 200px;
+}
+.btn-verProducto{
+    border: none;
+    color: #2a7ae4;
+    font-size: 17px;
+    background: transparent;
+    align-items: flex-start;
+}
+.container-footer{
+    display: flex;
+    padding: 50px 152px;
+    background: #EAF2FD;
+    justify-content: space-between;
+}
+.lista-info-footer{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 19px;
+    line-height: 40px;
+}
+.form-contacto-footer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form-contacto-titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-contacto-input{
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0;
+    box-shadow: rgba(82, 82, 82, 0.4) 0px 1.5px 0px;
+    overflow-y: scroll;
+}
+.container-input-contacto{
+    position: relative;
+}
+.input-nombre{
+    padding: 30px 0px 10px 15px;
+    width: 100%;
+}
+.nombre-input{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #757575;
+}
+.input-mensaje{
+    padding: 10px 0px 50px 15px;
+}
+.btn-contacto-footer{
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 200px;
+}
+.creditos-autor{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+/* PAGINA LOGIN */
+.body-login{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #E5E5E5;
+}
+.header-login{
+    background: #fff;
+}
+.navbar-login{
+    justify-content: initial;
+}
+.section-form-login{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    
+}
+.container-form-login{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+.titulo-form{
+    font-size: 25px;
+}
+.input-form{
+    padding: 15px 0px 15px 5px;
+    margin: 15px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1.8px solid #757575;
+    box-shadow: rgb(38, 57, 77) 0px 0px 15px -5px;
+}
+.btn-login{
+    width: 100%;
+}
+.footer-login{
+    margin-top: auto;
+    background: #fff;
+}
