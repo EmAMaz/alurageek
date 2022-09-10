@@ -16,6 +16,10 @@ button, a{
 }
 .container-logo, .titulo-logo{
     display: flex;
+    margin-right: 20px;
+}
+.titulo-logo{
+    margin-left: 10px; 
 }
 .logoAlura,.logoGeek{
     font-size: 2em;
@@ -29,6 +33,7 @@ button, a{
     color: #2a7ae4;
     font-size: 17px;
     padding: 12px 50px;
+    margin-left: 30px;
 }
 .container-buscador input{
     padding: 10px 250px 10px 15px;
@@ -38,7 +43,6 @@ button, a{
 }
 .container-buscador{
     position: relative;
-    margin-left: 40px;
 }
 .buscador-input{
     position: absolute;
@@ -55,7 +59,12 @@ button, a{
     height: 100%;
 }
 .info-inicio{    
-    padding: 152px 152px 0px 152px;
+    padding: 0px 0px 32px 152px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;      
 }    
 .container-inicio h1{
     color: #fff;
@@ -79,10 +88,13 @@ button, a{
 .container-titulo-mas{
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
 }
 .ver-mas-card{
+    justify-content: space-around;
     color: #424242;
+    width: 105px;
+    display: flex;
 }
 .title-card{
     font-size: 30px;
@@ -98,6 +110,7 @@ button, a{
     flex-direction: column;
     font-weight: bold;
     line-height: 24px;
+    margin: 10px;
 }
 .img-tarjeta{
     width: 200px;
@@ -167,46 +180,110 @@ button, a{
     text-align: center;
     font-size: 14px;
 }
-/* PAGINA LOGIN */
-.body-login{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #E5E5E5;
+@media only screen and (max-width: 1460px){
+    .container-li-tarjeta{
+        justify-content: initial;
+        flex-wrap: wrap;
+    }
 }
-.header-login{
-    background: #fff;
+@media only screen and (max-width: 1230px){
+    .container-footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-contacto-footer{
+        width: 100%;
+    }
 }
-.navbar-login{
-    justify-content: initial;
+@media only screen and (max-width: 1130px){
+    .navbar{
+        width: max-content;
+    }
+    .info-inicio{
+        padding: 0px 52px 32px 52px;
+    }
+    .container-card{
+        padding: 50px 52px;
+    }
+    .container-footer{
+        padding: 50px 52px;
+    }
 }
-.section-form-login{
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
-    
+@media only screen and (max-width: 980px){
+    .container-buscador input{
+        width: 300px;
+        padding: 10px 0 10px 15px;
+    }
+    .btn-navbar{
+        padding: 12px 30px;
+    }
 }
-.container-form-login{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    align-items: center;
+@media only screen and (max-width: 810px){
+    .container-info-inicio{
+        background-position-x: center;
+        background-size: 150% 200%;
+    }
+    .container-buscador input{
+        width: 200px;
+        padding: 10px 0 10px 15px;
+    }
+    .btn-navbar{
+        padding: 12px 10px;
+    }
 }
-.titulo-form{
-    font-size: 25px;
+@media only screen and (max-width: 610px){
+    .container-buscador{
+        position: absolute;
+        right: 20px;
+    }
+    .btn-navbar{
+        margin-left: 0;
+    }
+    .container-buscador input{
+        display: none;
+    }
+    .logoAlura{
+        font-size: 1.5em;
+    }
+    .logoGeek{
+        font-size: 1.5em;
+    }
+}    
+@media only screen and (max-width: 560px){
+    .container-logo{
+        width: 100%;
+        justify-content: center;
+    }
+    .container-buscador{
+        position: absolute;
+        right: 20px;
+    }
+    .btn-navbar{
+        margin-left: 0;
+    }
+    .info-inicio{
+        padding: 10px 20px;
+        justify-content: center;
+    }
+    .lista-info-footer{
+        margin: 25px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .container-li-tarjeta {
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-tarjeta{
+        width: 250px;
+        height: 250px;
+    }
 }
-.input-form{
-    padding: 15px 0px 15px 5px;
-    margin: 15px 0;
-    width: 100%;
-    border: none;
-    border-bottom: 1.8px solid #757575;
-    box-shadow: rgb(38, 57, 77) 0px 0px 15px -5px;
-}
-.btn-login{
-    width: 100%;
-}
-.footer-login{
-    margin-top: auto;
-    background: #fff;
+@media only screen and (max-width: 420px){
+    .titulo-logo h3{
+        font-size: 1.5em;
+    }
+    .navbar{
+        margin: 30px 20px;
+    }
 }

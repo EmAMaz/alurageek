@@ -1,0 +1,144 @@
+.main-prod{
+    background: #e5e5e5;
+}
+.container-buscador-prod{
+    position: relative;
+    width: auto;
+}
+.buscador-input-prod{
+    padding: 10px 0px 10px 15px;
+    width: 35vw;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgb(236, 236, 236);
+    right: 15px;
+    top: 10px;
+}
+.buscador-lupa-prod{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.navbar-prod{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 152px;
+    margin: 30px auto;
+    align-items: center;
+}
+.btn-menuAdm-prod{
+    color: #2a7ae4;
+    background: transparent;
+    padding: 15px;
+    border: 1px solid #2a7ae4;
+}
+.container-logo-prod{
+    display: flex;
+    margin-right: 20px;
+}
+.containerForm{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.section-form{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-form-prod{
+    font-size: 2em;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    text-align: start;
+    color: #424242;
+}
+.input-form-prod{
+    width: 100%;
+    margin: 10px 0;
+    padding: 25px 0 5px 15px;
+    font-size: 1.2em;
+}
+.container-input-prod{
+    position: relative;
+}
+.placeholder-input-prod{
+    position: absolute;
+    font-size: 14px;
+    top: 18px;
+    left: 15px;
+}
+.btn-form-prod{
+    margin-top: 13px;
+    padding: 15px;
+    letter-spacing: 1.3px;
+    background: #2a7ae4;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+@media only screen and (max-width: 1500px){
+    .containerForm{
+        width: 100%;
+        padding: 50px 200px;
+    }
+}
+@media only screen and (max-width: 1230px){
+    .containerForm{
+        width: 100%;
+        padding: 50px 100px ;
+    }
+    .buscador-input-prod{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 1130px){
+    .navbar-prod{
+        padding: 0 50px;
+    }
+}    
+@media only screen and (max-width: 870px){
+    .navbar-prod{
+        flex-direction: row-reverse;
+    }
+    .container-logo-prod{
+        width: auto;
+        margin-right: 0px;
+        order: 2;
+    }
+    .btn-menuAdm-prod{
+        padding: 11px;
+    }
+    .logoAlura{
+        font-size: 1.5em;
+    }
+    .logoGeek{
+        font-size: 1.5em;
+    }
+    .btn-menuAdm-prod{
+        font-size: 14px;
+    }
+    .buscador-input-prod{
+        width: 200px;
+        padding: 10px 100px 10px 15px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .container-buscador-prod{
+        width: auto;
+    }
+    .buscador-input-prod{
+        display: none;
+    }
+    .buscador-lupa-prod {
+        position: initial;
+    }
+}
+@media only screen and (max-width: 600px){
+    .containerForm{
+        width: 100%;
+        padding: 50px 50px;
+    }
+}
